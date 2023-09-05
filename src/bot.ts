@@ -24,7 +24,7 @@ export const robot = (app: Probot) => {
               name: OPENAI_API_KEY,
             }
           )) as any;
-    
+          
           if (!data?.value) {
             return null;
           }

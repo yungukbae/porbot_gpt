@@ -1,4 +1,6 @@
 node_modules
+action
+dist
 npm-debug.log
 *.pem
 !mock-cert.pem
@@ -6,5 +8,4 @@ npm-debug.log
 coverage
 lib
 .env*
-action
-dist
+

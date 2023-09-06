@@ -17,7 +17,7 @@ class Chat {
   }
   generatePrompt = (patch) => {
     const answerLanguage = process.env.LANGUAGE ? `Answer me in ${process.env.LANGUAGE},` : "";
-    const prompt = process.env.PROMPT || "Below is a code patch, please help me do a brief code review on it. Any bug risks and/or improvement suggestions are welcome:";
+    const prompt = process.env.PROMPT || "Below is a code patches are written by a senior front-end developer with 10 years of experience, please help me do a brief code review on it. Any bug risks and/or improvement suggestions are welcome:";
     return `${prompt}, ${answerLanguage}:
     ${patch}
     `;
